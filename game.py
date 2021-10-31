@@ -3,7 +3,7 @@ Burger Invaders
 
 Space Invaders but with burgers and a chef.
 """
-import random
+import random # to randomly images and sounds
 import arcade
 from pathlib import Path # allows us to get path for image/sound files
 
@@ -326,7 +326,7 @@ class MyGame(arcade.Window):
                 self.game_state = GAME_OVER
 
             # See if the player got enough points to win
-            if self.score == 50:
+            if self.score == 5:
                 self.game_state = YOU_WIN
             # If the bullet falls off the screen get rid of it
             if bullet.top < 0:
